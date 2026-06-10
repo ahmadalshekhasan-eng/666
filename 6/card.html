@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    
+<a href="cart.html" class="cart-btn">
+    🛒
+</a>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>سلة المشتريات</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<h1>
+
+سلة المشتريات
+
+</h1>
+
+<div id="cartContainer">
+
+</div>
+
+<script>
+
+let cart =
+JSON.parse(
+localStorage.getItem("cart")
+) || [];
+
+const container =
+document.getElementById(
+"cartContainer"
+);
+
+let html = "";
+
+cart.forEach(product => {
+
+html += `
+<div class="product-card">
+
+<h3>${product.name}</h3>
+
+<p>${product.price}</p>
+
+</div>
+`;
+
+});
+
+container.innerHTML = html;
+
+</script>
+
+</body>
+
+</html>

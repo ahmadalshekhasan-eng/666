@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+    
+<a href="cart.html" class="cart-btn">
+    🛒
+</a>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+<a href="cart.html">
+
+<button>
+
+عرض السلة
+
+</button>
+
+</a>
+
+
+
+
+
+
+    <title>المنتجات</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <h1 class="title">
+
+        منتجات القسم
+
+    </h1>
+
+
+
+
+    
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="ابحث عن منتج..."
+        onkeyup="searchProducts()">
+
+    <h3 id="productCount">
+
+        عدد المنتجات : 0
+
+    </h3>
+
+    <div id="productsContainer"
+         class="products-container">
+
+    </div>
+
+    <br>
+
+    <button onclick="history.back()">
+
+        رجوع
+
+    </button>
+
+    <script src="js/data.js"></script>
+
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>
